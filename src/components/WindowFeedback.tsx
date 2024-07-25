@@ -47,7 +47,7 @@ export default function WindowFeedback() {
                             <button 
                                 className="bg-zinc-800 rounded-lg border-2 border-transparent hover:border-purple-400 focus:outline-none focus:border-purple-400 flex flex-col gap-4 justify-center items-center w-[30%]"
                                 key={key}
-                                onClick={() => setFeedbackType(key as Feed)}
+                                onClick={() => setFeedbackType(key as FeedbackType)}
                             >
                                 <img className="text-white" src={value.image.src} alt={value.image.alt} />
                                 <span className="text-white">{value.title}</span>
@@ -56,7 +56,7 @@ export default function WindowFeedback() {
                       })}
                   </div>
       ) : (
-        <div className="text-white">Hello World</div>
+        <div className="te">Hello World</div>
       )}
 
       <footer className="text-zinc-400 text-xs">
